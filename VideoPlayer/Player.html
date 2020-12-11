@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link href="Styles.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery.js"></script>
+    </head>
+    <body>
+        <div id="frame">
+            <div id="playbar">
+                <div id="commands">
+                    <div id="progress">
+                        <div id="fill"></div>
+                    </div>
+                    
+                    <table border="0">
+                        <tr>
+                            <td width="80%">
+                                <img src="./elements/play_33px.png" onclick="button" id="playBtn"/>
+                            </td>
+                            <td>
+                                <img src="./elements/volume_33px.png" id="speaker"/>
+                            </td>
+                            <td>
+                                <input type="range" id="volume" min="0" max="1" value="0.40" step="0.02" onchange="changeSound()"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div id="video">
+            <div id="Panel">
+                <video id="myVid" width="900px" height="1200px" src="./elements/Sekiro_02.mp4"></video>
+            </div>    
+            
+            
+        </div>
+        <div id="text">
+            <p>
+                <h1>Death of an Immortal, Japan, 16th Century </h1>
+            </p>
+        </div>
+       <div id="image">  
+           <img src="elements/pepe_150_px.png"> 
+       </div>
+        <script type="text/javascript" src="Player.js"></script>
+    </body>
+</html>

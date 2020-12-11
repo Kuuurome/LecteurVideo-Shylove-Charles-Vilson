@@ -1,0 +1,166 @@
+html{
+    height: 100%;
+  
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to top, #6699ff 0%, #ffffff 100%);
+    animation-name: change ;
+    animation-delay: 10s;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+#frame{
+    height: 675px;
+    width: 1068px;
+    background-image: url(./elements/frame_5.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+#video{
+    width: 950px;
+    height: 650px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    overflow: hidden;
+  
+    
+   
+}
+#Panel{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+#commands{
+    height: 40px;
+    width: 97%;
+    padding: 10px;
+    position: absolute;
+    top:107%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .3s;
+}
+#frame:hover #commands{
+    top:92%;
+}
+#progress{
+    width: 100%;
+    height: 10px;
+    background-color: gray;
+    display: flex;
+    position: relative;
+    top:0px;
+    left: 0px;
+}
+#fill{
+    height: 10px;
+    background-color: #99ccff;
+}
+#currentTime{
+    font-family: monospace;
+    font-size: 14px;
+    color:#99ccff;
+}
+#playBtn{
+    cursor: pointer;
+    
+}
+
+#volume{
+    cursor: pointer;
+}
+input[type=range]{
+    -webkit-appearance : none ;
+    background-color: #555;
+    height: 4px;
+    border-radius: 4px;
+    outline: none;
+}
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance : none ;
+    background-color: #99ccff;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+h1{
+    font-family: "Nixie One";
+    font-weight: bolder;
+    position: relative;
+    left: 50%;
+    top: 100%; 
+  
+    
+}
+
+#playbar{
+    position: absolute;
+    height: 350px;
+    width: 805px;
+    overflow: hidden;
+    left: 12%;
+    top: 33%;
+    
+    
+}
+
+#text{
+   position: absolute;
+   height: 500px;
+   width: 900px ;
+   top: 37%;
+   right: 44%;
+   
+   
+
+
+}
+
+#image{
+   position: absolute;
+   top: 40%;
+   transform: translate(-100%);
+   animation-name: slide;
+   animation-delay: 77s ;
+   animation-duration: 3s;
+   animation-iteration-count: 2;
+   animation-direction: alternate;
+   animation-fill-mode: none;
+  
+}
+
+
+@keyframes slide{
+    from {transform: translateX(-200px);}
+    to {transform: translate(20px);}
+}
+
+
+
+@keyframes change{
+    from { background: linear-gradient(to top,#6699ff 0%, #ffffff 100%);}
+    to {background: linear-gradient(to bottom,#000000 10% , #6699ff 100%);}
+}
+
+
+
+
+
